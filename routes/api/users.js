@@ -15,7 +15,7 @@ const User = require('../../models/User');
 //@desc      Register an applicant
 //@access    Public
 router.post(
-  '/applicant',
+  '/',
   [
     check('name', 'Name is required').not().isEmpty(),
     check('email', 'please include a valid email').isEmail(),
